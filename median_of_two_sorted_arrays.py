@@ -1,4 +1,4 @@
-class Suolution(object):    
+class Solution(object):    
 
     def findMedianSortedArrays(self, nums1, nums2): # Funcao de contagem de inversoes com merge sort
         i = 0  # Ponteiro do nums1
