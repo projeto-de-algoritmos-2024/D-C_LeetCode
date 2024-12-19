@@ -28,12 +28,6 @@ $ sudo apt-get update
 $ sudo apt-get install python3.6
 ```
 
-Depois, para instalar a biblioteca [tkinter](https://docs.python.org/pt-br/3/library/tkinter.html#module-tkinter):
-```
-sudo apt-get install python-tk
-```
-
-
 ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
