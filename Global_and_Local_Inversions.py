@@ -4,8 +4,14 @@ class Solution:
         lista_ordenada, inversoes, local = self.merge(nums)
 
         print(inversoes, local)
+        conta = 0
+        for i in range(len(nums) - 1):
+            if nums[i] > nums[i+1]:
+                # lógica
+                conta+=1
 
-        return inversoes == local
+
+        return inversoes == conta
 
     def merge(self, lista):
 
@@ -15,10 +21,14 @@ class Solution:
             return lista, 0, 0
         
         #faz o meio da função como inteiro
-        meio = len(lista)//2
+        if len(lista)%2:
+            meio = len(lista)//2 +1
+        else:
+            meio = len(lista)//2 
 
         esquerda = lista[:meio]
         direita = lista[meio:]
+        print(esquerda, direita)
 
         esquerda_ordenada, contador_esquerda, local_esquerda = self.merge(esquerda)
         direita_ordenada, contador_direita, local_direita = self.merge(direita)
@@ -49,10 +59,13 @@ class Solution:
                 print("direita")
                 ordenado.append(direita[j])
                 print(esquerda[i], direita[j])
+                print("IIIIIIIIIIIIII")
+                print(i,j)
+                if j==0 and num_inversoes==0:
+                    inversoes_local +=1
+                    print("oi")
                 j+=1
                 num_inversoes += len(esquerda[i:])
-                if esquerda[0] and direita[0] and len(esquerda)==1:
-                    inversoes_local +=1
                 print("fim direita")
                 
         print("fim while")  
@@ -62,7 +75,7 @@ class Solution:
         return ordenado, num_inversoes, inversoes_local
 
 
-entrada = [1,0,2]
+entrada = [1,0,3,2,4]
     
 contador = Solution()
 
