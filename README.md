@@ -10,7 +10,26 @@
 | 21/1043727  |  Pedro Cabeceira de Freitas |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+
+O projeto consistiu na resolução de 3 exercícios na plataforma LeetCode.
+
+### Global and Local Inversions (Medium)
+
+Link do Problema: [clique aqui](https://leetcode.com/problems/global-and-local-inversions/description/) <br>
+Link da Submissão: [clique aqui](https://leetcode.com/problems/global-and-local-inversions/submissions/1483979403) <br>
+Link do Código (GitHub): [clique aqui]() <br>
+
+### Count of Smaller Numbers After Self (Hard)
+
+Link do Problema: [clique aqui](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) <br>
+Link da Submissão: [clique aqui](https://leetcode.com/problems/count-of-smaller-numbers-after-self/submissions/1482268013/)<br>
+Link do Código (GitHub): [clique aqui]() <br>
+
+### Median of Two Sorted Arrays (Hard)
+
+Link do Problema: [clique aqui](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)<br>
+Link da Submissão: <br>
+Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/median_of_two_sorted_arrays.py) <br>
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
