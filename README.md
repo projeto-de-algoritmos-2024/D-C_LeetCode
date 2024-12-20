@@ -23,7 +23,7 @@ Link do Código (GitHub): [clique aqui]() <br>
 
 Link do Problema: [clique aqui](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) <br>
 Link da Submissão: [clique aqui](https://leetcode.com/problems/count-of-smaller-numbers-after-self/submissions/1482268013/)<br>
-Link do Código (GitHub): [clique aqui]() <br>
+Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/count_of_smaller_numbers_after_self.py) <br>
 
 ### Median of Two Sorted Arrays (Hard)
 
