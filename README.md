@@ -17,7 +17,7 @@ O projeto consistiu na resolução de 3 exercícios na plataforma LeetCode.
 
 Link do Problema: [clique aqui](https://leetcode.com/problems/global-and-local-inversions/description/) <br>
 Link da Submissão: [clique aqui](https://leetcode.com/problems/global-and-local-inversions/submissions/1483979403) <br>
-Link do Código (GitHub): [clique aqui]() <br>
+Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/Global_and_Local_Inversions.py) <br>
 
 ### Count of Smaller Numbers After Self (Hard)
 
