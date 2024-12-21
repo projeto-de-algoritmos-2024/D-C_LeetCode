@@ -1,85 +1,55 @@
 class Solution:
     def isIdealPermutation(self, nums):
-    
-        lista_ordenada, inversoes, local = self.merge(nums)
-
-        print(inversoes, local)
+        
+        # Conta inversões locais diretamente no loop
         conta = 0
         for i in range(len(nums) - 1):
-            if nums[i] > nums[i+1]:
-                # lógica
-                conta+=1
+            if nums[i] > nums[i + 1]:  # Inversões locais (pares adjacentes)
+                conta += 1
+                if nums[i] - nums[i+1] > 1: 
+                    return False
 
+        # Calcula as inversões globais usando merge sort
+        _, inversoes = self.merge(nums, 0, len(nums))
 
+        # Verifica se globais e locais são iguais
         return inversoes == conta
 
-    def merge(self, lista):
+    def merge(self, lista, inicio, fim):
+        # Caso base: lista com 1 ou nenhum elemento
+        if fim - inicio <= 1:
+            return lista[inicio:fim], 0
 
-        #volta para quem chamou
-        if len(lista)<=1:
-            
-            return lista, 0, 0
-        
-        #faz o meio da função como inteiro
-        if len(lista)%2:
-            meio = len(lista)//2 +1
-        else:
-            meio = len(lista)//2 
+        # Calcula o meio da lista
+        meio = (inicio + fim) // 2
 
-        esquerda = lista[:meio]
-        direita = lista[meio:]
-        print(esquerda, direita)
+        # Divide a lista em duas partes e conta inversões em cada uma
+        esquerda, contador_esquerda = self.merge(lista, inicio, meio)
+        direita, contador_direita = self.merge(lista, meio, fim)
 
-        esquerda_ordenada, contador_esquerda, local_esquerda = self.merge(esquerda)
-        direita_ordenada, contador_direita, local_direita = self.merge(direita)
+        # Junta as partes e conta inversões globais
+        lista_ordenada, num_contador = self.merge_and_count(esquerda, direita)
 
-        # junta a direita com a esquerda
-        lista_ordenada, num_contador, num_contador_local = self.merge_and_conut(esquerda_ordenada, direita_ordenada)
+        # Soma as inversões de ambas as metades e as globais
+        total_inversoes = contador_esquerda + contador_direita + num_contador
+        return lista_ordenada, total_inversoes
 
-        total_inversoes_local = num_contador_local + local_direita + local_esquerda
-        total_inversoes = contador_esquerda + num_contador + contador_direita
-        return lista_ordenada, total_inversoes, total_inversoes_local
-
-    def merge_and_conut(self, esquerda, direita):
-        i=0
-        j=0
+    def merge_and_count(self, esquerda, direita):
+        i, j = 0, 0
         ordenado = []
         num_inversoes = 0
-        inversoes_local = 0
-        print("----------------")
-        print(esquerda)
-        print(direita)
+
+        # Junta as listas esquerda e direita, contando inversões
         while i < len(esquerda) and j < len(direita):
             if esquerda[i] <= direita[j]:
                 ordenado.append(esquerda[i])
-                print(esquerda[i], direita[j])
-                i+=1
-
-            elif direita[j] < esquerda[i]:
-                print("direita")
+                i += 1
+            else:
                 ordenado.append(direita[j])
-                print(esquerda[i], direita[j])
-                print("IIIIIIIIIIIIII")
-                print(i,j)
-                if j==0 and num_inversoes==0:
-                    inversoes_local +=1
-                    print("oi")
-                j+=1
-                num_inversoes += len(esquerda[i:])
-                print("fim direita")
-                
-        print("fim while")  
+                num_inversoes += len(esquerda) - i
+                j += 1
 
+        # Adiciona os elementos restantes
         ordenado.extend(esquerda[i:])
         ordenado.extend(direita[j:])
-        return ordenado, num_inversoes, inversoes_local
-
-
-entrada = [1,0,3,2,4]
-    
-contador = Solution()
-
-resultado = contador.isIdealPermutation(entrada)
-
-print(resultado)
-
+        return ordenado, num_inversoes
