@@ -6,33 +6,31 @@
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| 21/1029156  |  Brunna Louise Martins Rocha |
-| 21/1043727  |  Pedro Cabeceira de Freitas |
+| 21/1029156  |  [Brunna Louise Martins Rocha](https://github.com/brunna-martins) |
+| 21/1043727  |  [Pedro Cabeceira de Freitas](https://github.com/pkbceira03) |
 
 ## Sobre 
 
-O projeto consistiu na resolução de 3 exercícios na plataforma LeetCode.
+O projeto consiste na resolução de 3 exercícios da plataforma LeetCode.
 
 ### Global and Local Inversions (Medium)
 
 Link do Problema: [clique aqui](https://leetcode.com/problems/global-and-local-inversions/description/) <br>
-Link da Submissão: [clique aqui](https://leetcode.com/problems/global-and-local-inversions/submissions/1483979403) <br>
-Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/Global_and_Local_Inversions.py) <br>
+Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/Global_and_Local_Inversions.py) <br><br>
+![imagem 1](img/submissao_global_and_local_inversions.png)<br>
 
 ### Count of Smaller Numbers After Self (Hard)
 
 Link do Problema: [clique aqui](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) <br>
-Link da Submissão: [clique aqui](https://leetcode.com/problems/count-of-smaller-numbers-after-self/submissions/1482268013/)<br>
-Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/count_of_smaller_numbers_after_self.py) <br>
+Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/count_of_smaller_numbers_after_self.py) <br><br>
+![imagem 2](img/submissao_count_of_smaller_numbers_after_self.png)<br>
 
 ### Median of Two Sorted Arrays (Hard)
 
 Link do Problema: [clique aqui](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)<br>
-Link da Submissão: <br>
-Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/median_of_two_sorted_arrays.py) <br>
+Link do Código (GitHub): [clique aqui](https://github.com/projeto-de-algoritmos-2024/D-C_LeetCode/blob/master/median_of_two_sorted_arrays.py) <br><br>
+![imagem 3](img/submissao_median_of_two_sorted_arrays.png) <br>
 
-## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 **Linguagem**: Python<br>
@@ -48,20 +46,14 @@ $ sudo apt-get install python3.6
 ```
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Para testar o código na IDE de sua preferência, após realizada a instalação do Python3, você deve instanciar a classe Solution de cada arquivo. Em seguida, chame a primeira função declarada em cada arquivo com a quantidade e o tipo de argumentos especificados. Lembre-se de chamá-la dentro de uma função print() para visualizar o retorno do algoritmo via terminal.
+
+O código está otimizado para rodar no ambiente do LeetCode. Basta copiar e colar o código no link da respectiva questão (consultar links acima).
 
 ## Apresentação
 
 Clique na thumbnail abaixo para acessar o vídeo no YouTube.
 
 [![Watch the video](https://img.youtube.com/vi/2LFrZiy-c8o/0.jpg)](https://www.youtube.com/watch?v=2LFrZiy-c8o)
-
-
-
-
-
-
 
